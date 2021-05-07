@@ -1,13 +1,10 @@
 <template>
-    <div>
-        <a :href="obj.link">
-            <img
-                :src="obj.src"
-                alt="图片"
-                width="100%"
-            >
-        </a>
-    </div>
+    <a :href="obj.link">
+        <img
+            :src="obj.src"
+            alt="图片"
+        >
+    </a>
 </template>
 
 <script>
@@ -19,8 +16,8 @@
             obj: {
                 type: Object,
                 default: () => ({
-                    link: '',
                     src: '',
+                    link: '',
                 }),
             },
         },
@@ -28,4 +25,9 @@
     });
 </script>
 
-<style></style>
+<style lang="scss">
+a {
+    display: block;
+    width: 100%;
+}
+</style>

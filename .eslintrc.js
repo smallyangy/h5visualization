@@ -30,6 +30,7 @@ module.exports = {
                 ignorePropertyModificationsFor: ['state', 'config'],
             },
         ],
+        'no-console': 'off',
         indent: ['error', 4],
         'vue/script-indent': [
             'error',
